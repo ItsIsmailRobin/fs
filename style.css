@@ -6,18 +6,18 @@
   @return $val;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap:400');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kalam&display=swap:400');
 
 body {
   background: radial-gradient(#1a1a1a, #0b0b0b);
   background-size: 100vw 100vh; 
   overflow: hidden;
-  padding-top: 50vh;
+  padding-top: 40vh;
 }
 
 .txt {
   text-align: center;
-  font-family: 'Kalam';
+  font-family: 'Josefin Sans';
   font-size: 4vmin;
   font-weight: 400;
   animation: netflix_style 8.5s infinite;
