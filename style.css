@@ -1,4 +1,4 @@
-⁷@function makelongshadow($length,$angle) {
+@function makelongshadow($length,$angle) {
   $val: 0px 0px transparent;
   @for $i from 1 through $length {
     $val: #{$val}, #{$i}px #{$i*$angle}px #aaa;
@@ -20,9 +20,6 @@ body {
   font-family: 'Josefin Sans';
   font-size: 4vmin;
   font-weight: 400;
-  margin: 25px;
-  width: 350px;
-  height: 200px;
   animation: netflix_style 8.5s infinite;
   outline: none;
   white-space: nowrap;
