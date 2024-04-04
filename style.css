@@ -1,78 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap');
-
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  font-family: sans-serif;
 }
 
 body {
-  background: #1a1c21;
-  font-size: 2vmin;
-  font-family: JetBrains Mono, monospace;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #e4bb68;
+  background: #000;
 }
 
-.string {
-  display: flex;
-  flex-direction: column;
+.container {
   text-align: center;
-  animation: move 5s infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 
-.greeting {
+.container span {
+  text-transform: uppercase;
+  display: block; 
+}
+
+.text1 {
+  color: red;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  background: black;
   position: relative;
-  top: 8.6vmin;
-  animation: white-out 5s infinite;
+/*   shorthand animation property: name | duration | iteration count */
+/*   animation: text 4s 1; */
+  animation-name: text;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
-.closure::after {
-  content: '';
-  position: absolute;
-  height: 25vmin;
-  width: 40vmin;
-  background: #1a1c21;
-  transform: translate(-45vmin, -24.5vmin);
+.text2 {
+  font-size: 15px;
+  letter-spacing: 5px;
+  color: #FFFFFF;
 }
 
-.closure::before {
-  content: '';
-  position: absolute;
-  height: 25vmin;
-  width: 40vmin;
-  background: #1a1c21;
-  transform: translate(-40vmin, 5vmin);
-}
-
-.en {
-  color: #fa8231;
-}
-
-.es {
-  color: white;
-}
-
-.de {
-  color: #c678dd;
-}
-
-.it {
-  color: #a9b0bd;
-}
-
-@keyframes move {
-  25% {
-    transform: translatey(-5.8vmin);
-    opacity: 1;
+@keyframes text {
+  0% {
+    color: black;
+    margin-bottom: -40px;
   }
-  50% {
-    transform: translatey(-11vmin);
+  30% {
+    letter-spacing: 25px;
+    margin-bottom: -40px;
   }
-  75% {
-    transform: translatey(-16.5vmin);
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+  100% {
+    margin-bottom: 20px;
   }
 }
